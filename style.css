@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #141414;
+  color: white;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.logo {
+  width: 120px;
+}
+
+.sign-in {
+  background: #e50914;
+  border: none;
+  padding: 10px 18px;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background: url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1600&q=80')
+    center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  padding: 0 60px;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  margin-bottom: 25px;
+}
+
+.watch-btn {
+  background: #e50914;
+  border: none;
+  padding: 14px 28px;
+  font-size: 1rem;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Movies Section */
+.movies {
+  padding: 40px 60px;
+}
+
+.movies h2 {
+  margin-bottom: 20px;
+}
+
+.movie-row {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+}
+
+.movie-card img {
+  width: 220px;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.movie-card img:hover {
+  transform: scale(1.08);
+}
