@@ -10,8 +10,8 @@
 
   <!-- Navbar -->
   <nav class="navbar">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix" class="logo" />
-    <button class="sign-in">Sign In</button>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix" class="logo"/>
+    <button class="sign-in" onclick="login()">Sign In</button>
   </nav>
 
   <!-- Hero Section -->
@@ -34,6 +34,20 @@
     </div>
   </section>
 
-  <script src="script.js"></script>
+<input type="text" id="search" placeholder="Search movies...">
+<div id="movies"></div>
+<button onclick="addFavorite('Avengers')">
+Add to Favorite
+</button>
+<iframe
+width="800"
+height="450"
+src="https://www.youtube.com/embed/TcMBFSGVi1c"
+allowfullscreen>
+</iframe>
+<div class="loader"></div>
+
+ <script src="script.js"></script>
+
 </body>
 </html>
